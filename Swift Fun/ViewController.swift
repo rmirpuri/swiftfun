@@ -10,9 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ethocaHeadingLabelPortal: UILabel!
+    
+    var buttonCount = 0;
+    
+    @IBOutlet weak var buttonCountView: UILabel!
+    @IBAction func submitButton(_ sender: Any) {
+        
+        buttonCount = buttonCount + 1;
+    
+       
+        
+        if buttonCount > 5 {
+            ethocaHeadingLabelPortal.textColor = UIColor.red;
+            
+            buttonCountView.text = "You hit Submit button more than 5 times"
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = UIColor.green
+        
+        ethocaHeadingLabelPortal.text = "Ethoca"
     }
 
     override func didReceiveMemoryWarning() {
