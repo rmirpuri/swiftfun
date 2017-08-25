@@ -74,6 +74,8 @@
                     <connections>
                         <outlet property="buttonCountView" destination="4eY-sJ-Jex" id="XmX-40-eQl"/>
                         <outlet property="ethocaHeadingLabelPortal" destination="jyp-TN-645" id="jmb-iO-Osx"/>
+                        <outlet property="loginTextField" destination="9SI-xQ-mSh" id="vgF-Bx-QRy"/>
+                        <outlet property="passwordTextField" destination="Ihb-5n-Q41" id="dqR-4v-9vT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

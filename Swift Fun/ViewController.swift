@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     
     var buttonCount = 0;
     
+    @IBOutlet weak var loginTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     @IBOutlet weak var buttonCountView: UILabel!
     @IBAction func submitButton(_ sender: Any) {
         
@@ -26,6 +31,9 @@ class ViewController: UIViewController {
             
             buttonCountView.text = "You hit Submit button more than 5 times"
         }
+        
+        print(loginTextField.text!)
+        print(passwordTextField.text!)
         
         
     }
